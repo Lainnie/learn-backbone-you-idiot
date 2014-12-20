@@ -20,7 +20,7 @@ var Todo = Backbone.Model.extend({
 
   // constructor
   initialize: function() {
-    log('Todo initialize', 'with some value');
+    log('Model Todo initialize');
     // listen to events on the model
     this.on('change', function() {
       log('model has changed');
@@ -36,5 +36,3 @@ var Todo = Backbone.Model.extend({
 var todo = new Todo({
   completed: true
 });
-
-debugger;
